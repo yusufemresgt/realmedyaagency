@@ -45,10 +45,10 @@ if (!fs.existsSync(UPLOAD_DIR)) fs.mkdirSync(UPLOAD_DIR, { recursive: true });
     const seed = {
       version: 1,
       settings: { pointsPerHour: POINTS_PER_HOUR },
-      creators: [
-        { id: 'cr_m3t3', name: 'M3T3_GAMES', tiktok: 'm3t3_games', instagram: 'm3t3_games', avatar: 'assets/logo.jpg', active: true, isLive: false, totalManualSeconds: 55800, lastSeen: null, lastError: null, createdAt: nowISO() },
-        { id: 'cr_berat', name: 'Berat', tiktok: 'beratkamaz_', instagram: '', avatar: 'assets/logo.jpg', active: true, isLive: false, totalManualSeconds: 111600, lastSeen: null, lastError: null, createdAt: nowISO() },
-        { id: 'cr_kaan', name: 'KaanTea', tiktok: 'kaantea', instagram: 'kaantea', avatar: 'assets/logo.jpg', active: true, isLive: false, totalManualSeconds: 27900, lastSeen: null, lastError: null, createdAt: nowISO() }
+      creators:[
+        {id:'cr_busra',displayOrder:1,name:'BÜŞRA🍀',tiktok:'busraa0980',instagram:'',avatar:'uploads/busra.jpg',active:true,isLive:false,totalManualSeconds:111600,lastSeen:null,lastError:null,createdAt:nowISO()},
+        {id:'cr_minik',displayOrder:2,name:'𝑀𝐼̇𝑁𝐼̇𝐾',tiktok:'miniksmina0',instagram:'',avatar:'uploads/minik.jpg',active:true,isLive:false,totalManualSeconds:55800,lastSeen:null,lastError:null,createdAt:nowISO()},
+        {id:'cr_can',displayOrder:3,name:'Can Şahin',tiktok:'sahinntk',instagram:'',avatar:'uploads/can_sahin.jpg',active:true,isLive:false,totalManualSeconds:27900,lastSeen:null,lastError:null,createdAt:nowISO()}
       ],
       sessions: [],
       audit: []

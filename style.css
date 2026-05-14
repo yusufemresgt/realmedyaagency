@@ -135,3 +135,21 @@ body::after{content:"";position:fixed;inset:0;z-index:-3;background-image:linear
 .easy-creator-card{border-radius:26px}
 .easy-avatar-zone img,.easy-upload-box img{border:2px solid rgba(255,255,255,.28);box-shadow:0 0 26px rgba(255,255,255,.10),0 0 44px rgba(0,229,255,.08)}
 @media(max-width:900px){.leader-card.rank-1{transform:none}.leader-card{min-height:auto}.leader-card.rank-1,.leader-card.rank-2,.leader-card.rank-3{min-height:auto}}
+
+
+/* === V17 özel lider efektleri === */
+.leader-card.rank-1{animation:championBob 3.6s ease-in-out infinite, championTilt 5.6s ease-in-out infinite; transform-origin:center bottom;}
+.leader-card.rank-1:hover{animation-play-state:paused; transform:translateY(-24px) scale(1.02);}
+.leader-card.rank-1::after{height:220px;background:radial-gradient(circle,rgba(255,255,255,.26),rgba(0,229,255,.13),rgba(255,40,70,.10),transparent 72%)}
+.leader-card.rank-1 .leader-avatar-wrap{animation:avatarHalo 2.8s ease-in-out infinite;}
+.leader-card.rank-1 .leader-name{background:linear-gradient(180deg,#fff,#ffffff 42%,#d4f8ff 74%,#ffdae2 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 30px rgba(255,255,255,.18)}
+.leader-card.rank-1 .leader-tier{box-shadow:0 0 20px rgba(255,255,255,.15),0 0 30px rgba(0,229,255,.12)}
+.leader-card.rank-1 .leader-rank-line{color:#fff; text-shadow:0 0 14px rgba(255,255,255,.28)}
+.leader-card.rank-1::before{background:linear-gradient(130deg,rgba(255,255,255,.22),transparent 18%,rgba(0,229,255,.10) 50%,rgba(255,49,84,.14) 78%,transparent 100%)}
+.centered-leader-head h2{letter-spacing:-1.4px;text-shadow:0 0 28px rgba(255,255,255,.10),0 0 40px rgba(255,55,86,.06)}
+.centered-leader-head .leader-tier{display:inline-flex}
+.agency-league{overflow:hidden}
+.agency-league .league-glow.three{position:absolute;width:190px;height:190px;background:rgba(255,255,255,.08);left:44%;top:12%;filter:blur(20px);border-radius:50%;animation:leagueFloat 8s ease-in-out infinite alternate}
+@keyframes championBob{0%,100%{transform:translateY(-22px)}50%{transform:translateY(-32px)}}
+@keyframes championTilt{0%,100%{rotate:-0.8deg}50%{rotate:0.8deg}}
+@keyframes avatarHalo{0%,100%{box-shadow:0 0 22px rgba(255,255,255,.22),0 0 42px rgba(0,229,255,.18),0 0 52px rgba(255,55,86,.16)}50%{box-shadow:0 0 30px rgba(255,255,255,.34),0 0 56px rgba(0,229,255,.28),0 0 72px rgba(255,55,86,.24)}}

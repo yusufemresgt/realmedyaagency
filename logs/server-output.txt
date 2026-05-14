@@ -6,7 +6,30 @@
 [2026-05-14T22:20:48.106Z] Yayinci Yonetimi: http://localhost:3000/canli-admin.html
 [2026-05-14T22:20:48.106Z] Admin sifresi: real2026
 [2026-05-14T22:20:48.107Z] TikTok connector: yok - site yine acilir
-[2026-05-14T22:33:14.476Z] Real Medya Agency V13 calisiyor: http://localhost:3000
-[2026-05-14T22:33:14.478Z] Yayinci Yonetimi: http://localhost:3000/canli-admin.html
-[2026-05-14T22:33:14.478Z] Admin sifresi: real2026
-[2026-05-14T22:33:14.479Z] TikTok connector: yuklu
+[2026-05-14T22:31:49.712Z] Real Medya Agency V13 calisiyor: http://localhost:3000
+[2026-05-14T22:31:49.713Z] Yayinci Yonetimi: http://localhost:3000/canli-admin.html
+[2026-05-14T22:31:49.713Z] Admin sifresi: real2026
+[2026-05-14T22:31:49.714Z] TikTok connector: yok - site yine acilir
+[2026-05-14T22:32:00.620Z] Port 3000 dolu, 3001 deneniyor...
+[2026-05-14T22:32:00.623Z] Real Medya Agency V13 calisiyor: http://localhost:3000
+[2026-05-14T22:32:00.623Z] Yayinci Yonetimi: http://localhost:3000/canli-admin.html
+[2026-05-14T22:32:00.623Z] Admin sifresi: real2026
+[2026-05-14T22:32:00.624Z] TikTok connector: yok - site yine acilir
+[2026-05-14T22:32:00.624Z] Real Medya Agency V13 calisiyor: http://localhost:3001
+[2026-05-14T22:32:00.625Z] Yayinci Yonetimi: http://localhost:3001/canli-admin.html
+[2026-05-14T22:32:00.625Z] Admin sifresi: real2026
+[2026-05-14T22:32:00.625Z] TikTok connector: yok - site yine acilir
+[2026-05-14T22:54:16.029Z] Port 3000 dolu, 3001 deneniyor...
+[2026-05-14T22:54:16.032Z] Port 3001 dolu, 3002 deneniyor...
+[2026-05-14T22:54:16.033Z] Real Medya Agency V13 calisiyor: http://localhost:3000
+[2026-05-14T22:54:16.033Z] Yayinci Yonetimi: http://localhost:3000/canli-admin.html
+[2026-05-14T22:54:16.034Z] Admin sifresi: real2026
+[2026-05-14T22:54:16.034Z] TikTok connector: yok - site yine acilir
+[2026-05-14T22:54:16.035Z] Real Medya Agency V13 calisiyor: http://localhost:3001
+[2026-05-14T22:54:16.035Z] Yayinci Yonetimi: http://localhost:3001/canli-admin.html
+[2026-05-14T22:54:16.035Z] Admin sifresi: real2026
+[2026-05-14T22:54:16.036Z] TikTok connector: yok - site yine acilir
+[2026-05-14T22:54:16.036Z] Real Medya Agency V13 calisiyor: http://localhost:3002
+[2026-05-14T22:54:16.036Z] Yayinci Yonetimi: http://localhost:3002/canli-admin.html
+[2026-05-14T22:54:16.037Z] Admin sifresi: real2026
+[2026-05-14T22:54:16.037Z] TikTok connector: yok - site yine acilir

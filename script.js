@@ -142,6 +142,37 @@ function renderTop3(targetId, items){
   const order = [left, center, right].filter(Boolean);
   el.innerHTML = order.map((item)=> leaderCard(item, top.indexOf(item)+1)).join('');
 }
+
+function normalizeStaticCreator(db, creator, period='month'){
+  const seconds = Number(creator.totalManualSeconds||0) + (db.sessions||[]).filter(x=>x.creatorId===creator.id).reduce((sum,x)=>sum+Number(x.durationSeconds||0),0);
+  const hours = seconds/3600;
+  return {
+    id: creator.id,
+    displayOrder: creator.displayOrder ?? null,
+    name: creator.name || 'Yayıncı',
+    tiktok: creator.tiktok || '',
+    instagram: creator.instagram || '',
+    avatar: creator.avatar || 'assets/logo.jpg',
+    seconds,
+    hours: Number(hours.toFixed(2)),
+    points: 0
+  };
+}
+async function loadStaticLeaderboard(){
+  const res = await fetch('data/db.json', {cache:'no-store'});
+  if(!res.ok) throw new Error('data/db.json okunamadı');
+  const db = await res.json();
+  mergeTableSettings(db.settings?.leaderboard || db.settings || {});
+  applyLeaderCopy();
+  const mode = agencyTableSettings.sortMode || 'manual';
+  return (db.creators||[]).map(c=>normalizeStaticCreator(db,c)).sort((a,b)=>{
+    const ao = Number.isFinite(Number(a.displayOrder)) ? Number(a.displayOrder) : 999999;
+    const bo = Number.isFinite(Number(b.displayOrder)) ? Number(b.displayOrder) : 999999;
+    if(mode==='manual') return ao!==bo ? ao-bo : b.seconds-a.seconds;
+    return b.seconds!==a.seconds ? b.seconds-a.seconds : ao-bo;
+  });
+}
+
 async function loadLeaderboard(period='month'){
   try{
     const data = await apiFetch(`/api/leaderboard?period=${period}`);
@@ -149,9 +180,14 @@ async function loadLeaderboard(period='month'){
     applyLeaderCopy();
     return data.items || [];
   }catch(err){
-    console.warn('Backend yok, demo liderlik kullanılıyor:', err.message);
-    mergeTableSettings(DEFAULT_TABLE_SETTINGS); applyLeaderCopy();
-    return DEMO_LEADERS;
+    console.warn('Backend API yok, canlı site data/db.json üzerinden okunuyor:', err.message);
+    try{
+      return await loadStaticLeaderboard();
+    }catch(staticErr){
+      console.warn('data/db.json okunamadı, demo liderlik kullanılıyor:', staticErr.message);
+      mergeTableSettings(DEFAULT_TABLE_SETTINGS); applyLeaderCopy();
+      return DEMO_LEADERS;
+    }
   }
 }
 async function renderHomeLeaderboard(){

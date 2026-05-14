@@ -18,97 +18,48 @@
   },
   "creators": [
     {
-      "displayOrder": 1,
-      "id": "cr_m3t3",
+      "id": "cr_busra",
       "name": "BÜŞRA🍀",
       "tiktok": "busraa0980",
-      "instagram": "m3t3_games",
-      "avatar": "uploads/cr_m3t3-1778798093413.jpg",
-      "active": true,
-      "isLive": false,
-      "totalManualSeconds": 55800,
-      "lastSeen": null,
-      "lastError": null,
-      "createdAt": "2026-05-14T00:00:00.000Z"
-    },
-    {
-      "displayOrder": 2,
-      "id": "cr_berat",
-      "name": "𝑀𝐼̇𝑁𝐼̇𝐾",
-      "tiktok": "miniksmina0",
       "instagram": "",
-      "avatar": "uploads/cr_berat-1778798112745.jpg",
+      "avatar": "uploads/busra.jpg",
       "active": true,
       "isLive": false,
       "totalManualSeconds": 111600,
       "lastSeen": null,
       "lastError": null,
-      "createdAt": "2026-05-14T00:00:00.000Z"
+      "createdAt": "2026-05-15T00:00:00.000Z",
+      "displayOrder": 1
     },
     {
-      "displayOrder": 3,
-      "id": "cr_kaan",
+      "id": "cr_minik",
+      "name": "𝑀𝐼̇𝑁𝐼̇𝐾",
+      "tiktok": "miniksmina0",
+      "instagram": "",
+      "avatar": "uploads/minik.jpg",
+      "active": true,
+      "isLive": false,
+      "totalManualSeconds": 55800,
+      "lastSeen": null,
+      "lastError": null,
+      "createdAt": "2026-05-15T00:00:00.000Z",
+      "displayOrder": 2
+    },
+    {
+      "id": "cr_can",
       "name": "Can Şahin",
       "tiktok": "sahinntk",
-      "instagram": "kaantea",
-      "avatar": "uploads/cr_kaan-1778798127346.jpg",
+      "instagram": "",
+      "avatar": "uploads/can_sahin.jpg",
       "active": true,
       "isLive": false,
       "totalManualSeconds": 27900,
       "lastSeen": null,
       "lastError": null,
-      "createdAt": "2026-05-14T00:00:00.000Z"
+      "createdAt": "2026-05-15T00:00:00.000Z",
+      "displayOrder": 3
     }
   ],
   "sessions": [],
-  "audit": [
-    {
-      "id": "log_ae0bb598",
-      "action": "creator_update",
-      "detail": {
-        "id": "cr_kaan"
-      },
-      "at": "2026-05-14T22:35:31.846Z"
-    },
-    {
-      "id": "log_6cee7d1e",
-      "action": "creator_update",
-      "detail": {
-        "id": "cr_kaan"
-      },
-      "at": "2026-05-14T22:35:27.347Z"
-    },
-    {
-      "id": "log_9d6f247e",
-      "action": "creator_update",
-      "detail": {
-        "id": "cr_berat"
-      },
-      "at": "2026-05-14T22:35:18.285Z"
-    },
-    {
-      "id": "log_f5220974",
-      "action": "creator_update",
-      "detail": {
-        "id": "cr_berat"
-      },
-      "at": "2026-05-14T22:35:12.746Z"
-    },
-    {
-      "id": "log_690db237",
-      "action": "creator_update",
-      "detail": {
-        "id": "cr_m3t3"
-      },
-      "at": "2026-05-14T22:35:02.014Z"
-    },
-    {
-      "id": "log_ce769099",
-      "action": "creator_update",
-      "detail": {
-        "id": "cr_m3t3"
-      },
-      "at": "2026-05-14T22:34:53.415Z"
-    }
-  ]
+  "audit": []
 }
