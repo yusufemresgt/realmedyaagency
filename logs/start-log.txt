@@ -1,0 +1,14 @@
+=============================================== 
+REAL MEDYA AGENCY START: Cum 15.05.2026  1:33:13,90 
+Folder: C:\Users\THE YUSUF\Documents\Real Medya Agency 
+=============================================== 
+C:\Program Files\nodejs\node.exe
+v24.13.0
+Starting server window... 
+=============================================== 
+RUN_SERVER started: Cum 15.05.2026  1:33:14,13 
+Folder: C:\Users\THE YUSUF\Documents\Real Medya Agency 
+=============================================== 
+C:\Program Files\nodejs\node.exe
+Starting local server... 
+Opening: http://localhost:3000 

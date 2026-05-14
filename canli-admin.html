@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Yayıncı Yönetimi | Real Medya Agency</title>
+  <meta name="description" content="Real Medya Agency yayıncı yönetimi.">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="light-streak"></div><div class="light-streak s2"></div><canvas id="bgParticles"></canvas>
+<header class="topbar">
+  <div class="wide nav">
+    <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="Logo"><span class="brand-text"><strong>REAL MEDYA<br>AGENCY</strong><span>Yayıncı Yönetimi</span></span></a>
+    <nav class="navlinks" id="navLinks"><a href="index.html">Ana Sayfa</a><a href="liderlik.html">Yayın Liderleri</a><a href="admin.html">Admin Paneli</a><a href="realpay.html">RealPay</a></nav>
+    <div class="nav-actions"><button class="menu-btn" id="menuBtn"><span class="hamb"></span></button></div>
+  </div>
+</header>
+<main>
+  <section class="page-hero"><div class="wide"><span class="eyebrow">Ajans Paneli</span><h1>Yayıncı Yönetimi</h1></div></section>
+
+  <section class="section">
+    <div class="wide split">
+      <div class="card admin-login-card"><h2>Admin Girişi</h2><form id="liveAdminLogin" class="form"><input class="input" type="password" name="password" placeholder="Admin şifresi" required><button class="btn primary" type="submit">Panele Gir</button></form><p id="liveAdminLoginMsg" class="muted"></p></div>
+    </div>
+  </section>
+
+  <section id="liveAdminDash" class="section hidden">
+    <div class="wide easy-admin-shell">
+      <div class="easy-topbar card">
+        <div>
+          <span class="eyebrow">Kontrol Merkezi</span>
+          <h2>Ajans Tablosu</h2>
+        </div>
+        <div id="liveStatusBox" class="admin-live-toolbar compact-status"></div>
+        <div class="easy-actions">
+          <button class="btn primary" id="startMonitorBtn">Takibi Başlat</button>
+          <button class="btn ghost" id="runOnceBtn">Kontrol Et</button>
+          <button class="btn danger" id="stopMonitorBtn">Takibi Durdur</button>
+        </div>
+      </div>
+
+      <div class="easy-admin-grid">
+        <div class="card easy-add-card">
+          <h3>Yayıncı Ekle</h3>
+          <form id="creatorForm" class="easy-add-form">
+            <label class="field"><span>Takma Ad</span><input class="input" name="name" placeholder="Örn: M3T3 Games" required></label>
+            <label class="field"><span>TikTok</span><input class="input" name="tiktok" placeholder="m3t3_games" required></label>
+            <label class="field"><span>Sıra</span><input class="input" name="displayOrder" type="number" min="1" placeholder="1"></label>
+            <div class="easy-upload-box">
+              <img id="newCreatorPreview" src="assets/logo.jpg" alt="Profil önizleme">
+              <label class="btn ghost upload-btn">Bilgisayardan Resim Seç<input type="file" name="avatarFile" accept="image/png,image/jpeg,image/webp,image/svg+xml"></label>
+            </div>
+            <button class="btn primary wide-btn" type="submit">Yayıncıyı Kaydet</button>
+          </form>
+        </div>
+
+        <div class="card easy-board-settings">
+          <h3>Tablo Ayarı</h3>
+          <form id="tableSettingsForm" class="easy-settings-form">
+            <label class="field"><span>Başlık</span><input class="input" name="title" placeholder="Ajansın en çok yayın yapanları"></label>
+            <label class="field"><span>Sıralama</span><select class="input" name="sortMode"><option value="hours">Otomatik sıralama</option><option value="manual">Benim verdiğim sıraya göre</option></select></label>
+            <label class="field"><span>Tema</span><select class="input" name="theme"><option value="neon">Neon Premium</option><option value="silver">Gümüş Premium</option><option value="dark">Sade Koyu</option></select></label>
+            <label class="switch-line"><input type="checkbox" name="showTiktok" checked><span>TikTok görünsün</span></label>
+            <label class="switch-line"><input type="checkbox" name="showRankBadge" checked><span>Sıra rozeti görünsün</span></label>
+            <label class="switch-line"><input type="checkbox" name="showTier" checked><span>Etiket görünsün</span></label>
+            <label class="switch-line"><input type="checkbox" name="neonFirst" checked><span>1. sıra neon çerçeve</span></label>
+            <button class="btn primary wide-btn" type="submit">Ayarları Kaydet</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card easy-creators-card">
+        <div class="easy-card-head"><h3>Yayıncılar</h3><button class="btn ghost" type="button" onclick="refreshLiveAdmin()">Yenile</button></div>
+        <div id="creatorAdminRows" class="easy-creator-list"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

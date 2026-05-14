@@ -1,0 +1,11 @@
+{
+  "name": "real-medya-agency-v13-kolay-admin-resim-yukleme",
+  "version": "13.0.0",
+  "description": "Real Medya Agency premium site + kolay admin kart düzenleme ve bilgisayardan profil fotoğrafı yükleme",
+  "main": "server-standalone.js",
+  "scripts": {
+    "start": "node server-standalone.js",
+    "dev": "node server-standalone.js"
+  },
+  "dependencies": {}
+}
